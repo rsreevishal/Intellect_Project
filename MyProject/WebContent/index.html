@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta charset="ISO-8859-1">
+<title>Association Manager</title>
+</head>
+<body>
+	<div id="heading" style="margin-top:5%;margin-left:30%;margin-right:30%;">
+		<h1 style="text-align:center;border:2px solid black;"><span style="color:green;border:2px solid green;">Us</span>sociation</h1>
+	</div>
+	<center>
+	<div id = "userform">
+		<form action="./RequestHandler">
+			<table style="border:2px solid black;">
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name="uname"/></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="email"/></td>
+				</tr>
+				<tr>
+					<td>Mobile.no:</td>
+					<td><input type="tel" name="uno"/></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><textarea rows=5 cols=23 name="add"></textarea></td>
+				</tr>
+				<tr>
+					<td>Donation Type:</td>
+					<td>
+						<select name="dtype">
+							<option value="education">Education</option>
+							<option value="business">Business</option>
+							<option value="housing">Housing</option>
+							<option value="park">Public Park</option>
+							<option value="startup">Young Startup</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Donation Amount:</td>
+					<td>
+						<input type="number" name="damt"/>
+						<select>
+							<option value="inr">INR</option>
+							<option value="usd">USD</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit"/></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</center>
+</body>
+</html>
